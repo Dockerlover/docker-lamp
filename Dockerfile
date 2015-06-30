@@ -4,7 +4,7 @@ FROM docker-mysql
 MAINTAINER  liuhong1.happy@163.com
 # 添加环境变量
 ENV USER_NAME admin
-ENV SERVICE_ID php
+ENV SERVICE_ID lamp
 # 安装php和apache
 RUN apt-get update && apt-get -y install apache2 libapache2-mod-php5 \
     php5-mysql php5-gd php5-curl php-pear php-apc && \
